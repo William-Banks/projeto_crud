@@ -14,6 +14,7 @@ def criar_usuario(nome, email, senha):
         values = (nome, email, senha)
         cursor.execute(sql, values)
         conn.commit()
+        print('usuário cadastrado com sucesso!')
         conn.close()
         cursor.close()
 
